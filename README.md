@@ -6,7 +6,7 @@ Instruções / Instructions:
 
 🇵🇹 PT:
 
-1 - Adiciona o script 'os-detect.js' ao teu site para definir classes no <body> conforme o sistema operativo.<br>
+1 - Adiciona o script `os-detect.js' ao teu site para definir classes no <body> conforme o sistema operativo.<br>
 2 - Adiciona as regras CSS do ficheiro 'style-os-detect.css' diferentes para Windows e macOS/Linux.
 
 Existe uma outra opção sem JavaScript, apenas com CSS puro.
