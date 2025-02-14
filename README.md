@@ -14,7 +14,7 @@ Podes tentar @supports, mas isto não é 100% garantido (ficheiro 'style-os-dete
 
 🇬🇧 EN:
 
-1 - Add the 'os-detect.js' script to your site to set classes on the <body> according to the operating system.<br>
+1 - Add the '*os-detect.js*' script to your site to set classes on the <body> according to the operating system.<br>
 2 - Add the CSS rules from the 'style-os-detect.css' file for different styles on Windows and macOS/Linux.
 
 There is another option without JavaScript, using only pure CSS.<br>
