@@ -1,0 +1,13 @@
+@supports (overflow: overlay) {
+	/* Windows */
+	body {
+		font-family: "Segoe UI", Arial, sans-serif;
+	}
+}
+
+@supports (-webkit-touch-callout: none) {
+	/* macOS e iOS */
+	body {
+		font-family: "San Francisco", Helvetica, sans-serif;
+	}
+}
