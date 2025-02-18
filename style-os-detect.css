@@ -15,3 +15,32 @@
 	font-family: "San Francisco", Helvetica, sans-serif;
 	background-color: #e5e5e5;
 }
+
+/* ************************************************************************** */
+
+/* Estilos específicos para Windows */
+.windows .button {
+    border-radius: 0;
+}
+
+/* Estilos específicos para macOS */
+.macos .button {
+    border-radius: 8px;
+}
+
+/* Estilos para dispositivos móveis */
+.mobile-device .menu {
+    display: none;
+}
+
+/* Estilos adaptativos para preferência por modo escuro */
+.prefers-dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+/* Reduzir animações quando solicitado */
+.prefers-reduced-motion * {
+    transition: none !important;
+    animation: none !important;
+}
