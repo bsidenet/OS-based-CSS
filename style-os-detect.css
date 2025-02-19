@@ -1,46 +1,64 @@
-/* Estilos para Windows */
-.windows body {
-	font-family: "Segoe UI", Arial, sans-serif;
-	background-color: #f0f0f0;
+/* Estilos base para o título */
+.titulo-DV {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: white;
 }
 
-/* Estilos para Linux */
-.linux body {
-	font-family: "Ubuntu", "DejaVu Sans", sans-serif;
-	background-color: #d0d0d0;
+/* Estilos específicos por sistema operativo */
+.windows .titulo-DV { background-color: #0078d4; }
+.macos .titulo-DV { background-color: #999999; }
+.linux .titulo-DV { background-color: #333333; }
+
+/* Estilos por sistema operativo + browser */
+.windows.chrome .titulo-DV { background-color: #4285f4; }
+.windows.firefox .titulo-DV { background-color: #ff6b00; }
+.windows.edge .titulo-DV { background-color: #0078d4; }
+.windows.opera .titulo-DV { background-color: #ff1b2d; }
+
+.macos.chrome .titulo-DV { background-color: #00c4cc; }
+.macos.firefox .titulo-DV { background-color: #ff7139; }
+.macos.safari .titulo-DV { background-color: #007aff; }
+.macos.opera .titulo-DV { background-color: #ff1b2d; }
+
+.linux.chrome .titulo-DV { background-color: #1a73e8; }
+.linux.firefox .titulo-DV { background-color: #ff4f1f; }
+.linux.opera .titulo-DV { background-color: #ff1b2d; }
+
+/* Estilos específicos para dispositivos móveis */
+.mobile-device .titulo-DV {
+    padding: 12px;
+    margin: 8px;
 }
 
-/* Estilos para macOS */
-.macos body {
-	font-family: "San Francisco", Helvetica, sans-serif;
-	background-color: #e5e5e5;
+.ios .titulo-DV { background-color: #007aff; }
+.android .titulo-DV { background-color: #3ddc84; color: black; }
+
+/* Modo escuro */
+.prefers-dark-mode .titulo-DV {
+    filter: brightness(0.8);
 }
 
-/* ************************************************************************** */
+/* Versões específicas do Windows */
+.windows-10 .titulo-DV { border-bottom: 3px solid rgba(255, 255, 255, 0.2); }
+.windows-11 .titulo-DV { border-radius: 8px; }
 
-/* Estilos específicos para Windows */
-.windows .button {
-    border-radius: 0;
+/* Versões específicas do macOS */
+.macos-11 .titulo-DV,
+.macos-12 .titulo-DV,
+.macos-13 .titulo-DV {
+    border-radius: 10px;
 }
 
-/* Estilos específicos para macOS */
-.macos .button {
-    border-radius: 8px;
+/* Dispositivos touch */
+.touch-device .titulo-DV {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
-/* Estilos para dispositivos móveis */
-.mobile-device .menu {
-    display: none;
-}
-
-/* Estilos adaptativos para preferência por modo escuro */
-.prefers-dark-mode {
-    background-color: #222;
-    color: #eee;
-}
-
-/* Reduzir animações quando solicitado */
-.prefers-reduced-motion * {
-    transition: none !important;
-    animation: none !important;
+/* Reduzir animações para utilizadores com preferências de movimento reduzido */
+.prefers-reduced-motion .titulo-DV {
+    transition: none;
 }
