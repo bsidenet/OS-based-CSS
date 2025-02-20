@@ -1,0 +1,117 @@
+/* Estilos base para o título - Espaçamento uniforme */
+.titulo-DV {
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	color: #FFF;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+/* -------------------------------------------------------------- */
+
+/* Windows */
+
+/* Chrome, Edge, Brave, Vivaldi */
+.titulo-DV.windows.chrome { background-color: #000; margin: 0; padding: 0; }
+/* .titulo-DV.windows.chrome::after { content: 'Windows / Chrome'; } */
+
+/* Firefox */
+.titulo-DV.windows.firefox { background-color: #000; margin: 0; padding: 0; }
+/* .titulo-DV.windows.firefox::after { content: 'Windows / Firefox'; } */
+
+/* Opera */
+.titulo-DV.windows.opera { background-color: #000; margin: 0; padding: 0; }
+/* .titulo-DV.windows.opera::after { content: 'Windows / Opera'; } */
+
+.titulo-DV.windows.edge::after { content: 'Windows / Edge'; color: #000; background-color: #d1c4e9; }
+.titulo-DV.windows.brave::after { content: 'Windows / Brave'; color: #000; background-color: #ffccbc; }
+.titulo-DV.windows.vivaldi::after { content: 'Windows / Vivaldi'; color: #000; background-color: #c8e6c9; }
+
+/* -------------------------------------------------------------- */
+
+/* macOS */
+
+/* Chrome */
+.titulo-DV.macos.chrome { background-color: #000; margin: 10px 0 -10px 0; padding: 0; }
+.titulo-DV.macos.chrome::after { content: 'macOS / Chrome'; } 
+
+/* Firefox */
+.titulo-DV.macos.firefox { background-color: #000; margin: 10px 0 -10px 0; padding: 0;}
+/* .titulo-DV.macos.firefox::after { content: 'macOS / Firefox'; } */
+
+/* Safari */
+.titulo-DV.macos.safari { background-color: #000; margin: 10px 0 -10px 0; padding: 0; }
+/* .titulo-DV.macos.safari::after { content: 'macOS / Safari'; } */
+
+.titulo-DV.macos.opera::after { content: 'macOS / Opera'; color: #000; background-color: #f48fb1; }
+.titulo-DV.macos.brave::after { content: 'macOS / Brave'; color: #000; background-color: #ffab91; }
+.titulo-DV.macos.vivaldi::after { content: 'macOS / Vivaldi'; color: #000; background-color: #a5d6a7; }
+
+/* -------------------------------------------------------------- */
+
+/* Linux */
+
+/* Chrome */
+/* Chrome - Android */
+.titulo-DV.linux.chrome { background-color: #000; margin: 10px 0 -10px 0; padding: 0 0 10px 0; }
+/* .titulo-DV.linux.chrome::after { content: 'Linux / Chrome'; } */
+
+/* Firefox */
+.titulo-DV.linux.firefox { background-color: #000; margin: 10px 0 -10px 0; padding: 0}
+/* .titulo-DV.linux.firefox::after { content: 'Linux / Firefox'; } */
+
+.titulo-DV.linux.opera::after { content: 'Linux / Opera'; color: #FFF; background-color: #f06292; }
+.titulo-DV.linux.brave::after { content: 'Linux / Brave'; color: #000; background-color: #ffab91; }
+.titulo-DV.linux.vivaldi::after { content: 'Linux / Vivaldi'; color: #000; background-color: #aed581; }
+
+/* -------------------------------------------------------------- */
+
+/* Android */
+
+/* Chrome */
+.titulo-DV.android.chrome { background-color: #000; margin: 10px 0 0 0; padding: 0; }
+/* .titulo-DV.android.chrome::after { content: 'Android / Chrome;' } */
+
+/* Firefox */
+.titulo-DV.android.firefox { background-color: #000; margin: 10px 0 0 0; padding: 0; }
+/* .titulo-DV.android.firefox::after { content: 'Android / Firefox'; } */
+
+/* -------------------------------------------------------------- */
+
+/* iOS */
+
+/* Safari */
+.titulo-DV.ios.safari { background-color: #000; margin: 10px 0 0 0; padding: 0; }
+/* .titulo-DV.ios.safari::after { content: 'iOS / Safari'; } */
+
+.titulo-DV.ios.chrome::after { content: 'iOS / Chrome'; color: #000; background-color: #ffe0b2; }
+
+/* -------------------------------------------------------------- */
+
+/* Dispositivos */
+
+/* Estilo para dispositivos móveis */
+.titulo-DV.mobile-device { background-color: #000; margin: 0; padding: 0; }
+/* .titulo-DV.mobile-device::after { content: 'Dispositivo móvel'; color: #fff; } */
+
+/* -------------------------------------------------------------- */
+
+/* Preferências */
+
+/* Estilo para modo escuro */
+.titulo-DV.prefers-dark-mode::after { content: 'Modo escuro'; color: #FFF; filter: brightness(0.8); }
+
+/* Estilo para utilizadores com preferência por menos animações */
+.titulo-DV.prefers-reduced-motion::after { content: 'Reduzir animações'; color: #FFF; transition: none; }
+
+/* -------------------------------------------------------------- */
+/* Comentários */
+/*
+- O seletor usa classes dinâmicas atribuídas pelo JavaScript.
+- Estrutura: .titulo-DV.{SO}.{Navegador}
+- A classe 'mobile-device' é adicionada a dispositivos móveis.
+- As preferências de utilizador são refletidas por classes como 'prefers-dark-mode'.
+*/
